@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Selector CSS</title>
+    <style>
+      /*Selector untuk menguba semua yg ada di html*/
+      * {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      /*Selector tag biasa*/
+      h3 {
+        color: red;
+        background-color: wheat;
+        text-align: center;
+        font-size: 25px;
+      }
+
+      p {
+        color: green;
+      }
+
+      /*Selector class pakai titik*/
+      .class {
+        color: blue;
+        background-color: lightskyblue;
+      }
+
+      .classp {
+        color: purple;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        text-transform: uppercase;
+      }
+
+      /*Selector id pakai crash # */
+      #idp {
+        font-family: "Courier New", Courier, monospace;
+        text-transform: capitalize;
+        font-size: 20px;
+      }
+      #Id {
+        color: white;
+        background-color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <!--Selector Tag-->
+    <h3>Hari Ini Ngapain Mas?</h3>
+    <p>
+      Jadi hari ini kita belajar CSS, pada pertemuan kali ini belajar selector
+      css. dari tag biasa, tag yang diinisialisasikan menggunakan class dan id.
+      Ini adalah tag paragraf biasa tanpa di inisialisasikan class ataupun id
+    </p>
+    <!--Selector Class-->
+    <h3 class="class">Pembuatan Class</h3>
+    <p class="classp">
+      Nah untuk tag html yang diberi inisialisasi class maka nanti ketika akan
+      styling di css , maka selectornya diawali tanda titik(.). Misal tag p ini
+      aku beri class="class" maka nanti pas di css cara panggilnya =
+      .class{atribut:value;}
+    </p>
+
+    <!--Selector Id-->
+    <h3 id="Id">Pembuatan Id</h3>
+    <p id="idp">
+      Nah untuk tag html yang diberi inisialisasi id maka nanti ketika akan
+      styling di css , maka selectornya diawali tanda titik(#). Misal tag p ini
+      aku beri cid="id" maka nanti pas di css cara panggilnya =
+      #id{atribut:value;}
+    </p>
+  </body>
+</html>
