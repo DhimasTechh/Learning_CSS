@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Edit Text</title>
+    <style>
+      /* mensetting semua bagian di body */
+      * {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 30px;
+      }
+
+      /* mensetting bagian navbar */
+      .navbar {
+        background-color: black;
+        padding-top: 20px;
+        padding-bottom: 1rem;
+        text-align: center;
+      }
+      /* edit menu navbar */
+      .navbar a {
+        color: white;
+        text-transform: capitalize;
+        text-decoration: none;
+        margin: 20px;
+        font-size: 20px;
+      }
+
+      /* edit hover */
+      .navbar a:hover {
+        background-color: violet;
+        color: black;
+        padding: 15px;
+      }
+
+      /* mensetting judul */
+      .judul {
+        text-align: center;
+        text-decoration: underline;
+        text-transform: uppercase;
+      }
+
+      /* mensetting paragraf poin */
+      .poin {
+        text-align: center;
+        padding: 20px 100px 20px 100px;
+        border: 1px solid black;
+        border-radius: 10px;
+        background-color: lightgreen;
+      }
+
+      /* mensetting artikel */
+      .artikel {
+        text-indent: 30px; /*untuk menjorokkan text */
+        text-align: justify;
+        padding: 20px 80px 20px 80px;
+      }
+
+      /* mensetting nama */
+      .nama b {
+        text-align: right;
+        float: right; /*supaya text nya ke kanan */
+        border: 1px dotted black; /*dotted itu titik titik */
+        border-width: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- membuat berbagai menu navigasi yg berisi link yg mengarah ke suatu section -->
+    <nav class="navbar">
+      <a href="home">Home</a>
+      <a href="about">About</a>
+      <a href="services">Services</a>
+      <a href="contact">Contact</a>
+    </nav>
+    <!-- membuat judul konten -->
+    <h1 class="judul">Pertemuan 2</h1>
+
+    <!-- membuat paragraf konten -->
+    <p class="poin">
+      Hari Ini, kita akan berlatih membuat text yang berisikan link dan juga
+      belajar memposisikan text dengan style "text align"
+    </p>
+
+    <!-- membuat artikel -->
+    <p class="artikel">
+      Halo sekarang kita belajar 2 hal disini yaitu belajar membuat text yg
+      berisi link dan dapat di hover dan juga belajar memposisikan text. Lorem
+      ipsum, dolor sit amet consectetur adipisicing elit. Distinctio ad, eveniet
+      nam doloribus culpa eius ipsum dignissimos quia molestias ducimus, ut
+      ratione corporis sapiente adipisci rem in suscipit tempore doloremque?
+    </p>
+
+    <!-- rencana text ini ku posisikan ke kanan -->
+    <div class="nama">
+      <p><b>Dhimas Abdi Panuluh</b></p>
+    </div>
+  </body>
+</html>
