@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Edit Text</title>
+    <style>
+      /* mensetting semua bagian di body */
+      * {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 30px;
+      }
+
+      /* mensetting bagian navbar */
+      .navbar {
+        background-color: black;
+        padding-top: 20px;
+        padding-bottom: 1rem;
+        text-align: center;
+      }
+      /* edit menu navbar */
+      .navbar a {
+        color: white;
+        text-transform: capitalize;
+        text-decoration: none;
+        margin: 20px;
+        font-size: 20px;
+      }
+
+      /* edit hover */
+      .navbar a:hover {
+        background-color: violet;
+        color: black;
+        padding: 15px;
+      }
+
+      /* mensetting judul */
+      .judul {
+        text-align: center;
+        text-decoration: underline;
+        text-transform: uppercase;
+      }
+
+      /* mensetting paragraf poin */
+      .poin {
+        text-align: center;
+        padding: 20px 100px 20px 100px;
+        border: 1px solid black;
+        border-radius: 10px;
+        background-color: lightgreen;
+      }
+
+      /* mensetting artikel */
+      .artikel {
+        text-indent: 30px; /*untuk menjorokkan text */
+        text-align: justify;
+        padding: 20px 80px 20px 80px;
+      }
+
+      /* mensetting text-decoration */
+      .text-decoration {
+        background-color: lightblue;
+      }
+      .underline {
+        text-decoration: underline;
+      }
+
+      .overline {
+        text-decoration: overline;
+      }
+
+      .line-trought {
+        text-decoration: line-through;
+      }
+      .none {
+        text-decoration: none;
+      }
+
+      /* style hove text decoration */
+      .underline:hover {
+        background-color: red;
+      }
+      .overline:hover {
+        background-color: red;
+      }
+      .line-trought:hover {
+        background-color: red;
+      }
+      .underline:hover {
+        background-color: red;
+      }
+      .none:hover {
+        background-color: red;
+      }
+
+      /* mensetting text-transform */
+      .text-transform {
+        background-color: lightyellow;
+      }
+      .capitalize {
+        text-transform: capitalize;
+      }
+      .uppercase {
+        text-transform: uppercase;
+      }
+
+      .lowercase {
+        text-transform: lowercase;
+      }
+      /* style hove text transformr */
+      .capitalize:hover {
+        background-color: red;
+      }
+      .uppercase:hover {
+        background-color: red;
+      }
+      .lowercase:hover {
+        background-color: red;
+      }
+
+      /* mensetting nama */
+      .nama b {
+        text-align: right;
+        float: right; /*supaya text nya ke kanan */
+        border: 1px dotted black; /*dotted itu titik titik */
+        border-width: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- membuat berbagai menu navigasi yg berisi link yg mengarah ke suatu section -->
+    <nav class="navbar">
+      <a href="home">Home</a>
+      <a href="about">About</a>
+      <a href="services">Services</a>
+      <a href="contact">Contact</a>
+    </nav>
+    <!-- membuat judul konten -->
+    <h1 class="judul">Pertemuan 3</h1>
+
+    <!-- membuat paragraf konten -->
+    <p class="poin">
+      Hari Ini, kita akan berlatih membuat text yang berisikan link, belajar
+      memposisikan text dengan style "text align" dan juga kita belajar
+      mendekorasi text dengan "text-decoration" dan mungubah jenis text dengan
+      "text-transform"
+    </p>
+
+    <!-- membuat artikel -->
+    <p class="artikel">
+      Halo sekarang kita belajar 4 hal disini yaitu belajar membuat text yg
+      berisi link dan dapat di hover dan juga belajar memposisikan text, serta
+      kita dapat mengubah text dengan text decoration dan text transform di css.
+    </p>
+
+    <!-- disini belajar text-decoration -->
+    <div class="text-decoration">
+      <p class="underline">Mengenal text yang di underline/garis bawah</p>
+      <p class="overline">Mengenal text yang di overline/garis atas</p>
+      <p class="line-trought">
+        Mengenal text yang di line-trought atau dicoret tengah
+      </p>
+      <p class="none">
+        text-decoration none itu membuat text menjadi seperti text normal
+      </p>
+    </div>
+
+    <!-- mengenal text-transform -->
+    <div class="text-transform">
+      <p class="capitalize">
+        mengenal text transform capitalize/huruf depan kapital
+      </p>
+      <p class="uppercase">
+        mengenal text transform uppercase/semua huruf kapital
+      </p>
+      <p class="lowercase">
+        mengenal text transform lowercase/huruf kecil semua
+      </p>
+    </div>
+
+    <!-- rencana text ini ku posisikan ke kanan -->
+    <div class="nama">
+      <p><b>Dhimas Abdi Panuluh</b></p>
+    </div>
+  </body>
+</html>
