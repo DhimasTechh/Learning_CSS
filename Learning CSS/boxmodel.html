@@ -19,12 +19,18 @@
         padding-bottom: 10px;
       }
 
+      /* Container untuk flex layout */
+      .container {
+        display: flex;
+        gap: 100px; /* Jarak antara konten dan penjelasan */
+        margin-bottom: 150px;
+      }
+
       /* setting conten di tag article */
       .teori {
         background-color: lightblue;
         width: 500px;
         height: 300px;
-        margin-bottom: 50px;
         border: 1px solid black;
         border-top-left-radius: 10px; /*membuat sudut melengkung */
         border-top-right-radius: 20px;
@@ -44,8 +50,8 @@
         background-color: lightyellow;
         font-family: Arial, Helvetica, sans-serif;
         font-size: 20px;
-        justify-content: flex-end;
-        justify-content: left;
+        width: 500px; /* Mengatur lebar bagian penjelasan */
+        padding: 20px;
       }
     </style>
   </head>
@@ -59,35 +65,37 @@
     </header>
     <!-- disini saya akan menjelaskan teori dulu -->
     <article>
-      <div class="teori">
-        <p>
-          Ini adalah konten, dan setiap konten di dalam html pasti berbentuk
-          kotak. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic
-          vel eaque iusto consequuntur rerum labore voluptas pariatur totam
-          illum ullam. Aliquid dolorum, itaque ex laboriosam ullam obcaecati
-          reprehenderit minus nam error velit magni enim optio animi neque
-          debitis officia atque! Omnis, mollitia ducimus corporis a praesentium
-          esse id deleniti possimus?
-        </p>
-      </div>
+      <div class="container">
+        <div class="teori">
+          <p>
+            Ini adalah konten, dan setiap konten di dalam html pasti berbentuk
+            kotak. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic
+            vel eaque iusto consequuntur rerum labore voluptas pariatur totam
+            illum ullam. Aliquid dolorum, itaque ex laboriosam ullam obcaecati
+            reprehenderit minus nam error velit magni enim optio animi neque
+            debitis officia atque! Omnis, mollitia ducimus corporis a
+            praesentium esse id deleniti possimus?
+          </p>
+        </div>
 
-      <!-- jadi ini penjelasan tentang box model -->
-      <div class="penjelasan">
-        <h3>Penjelasan</h3>
-        <p>Jadi ada beberapa yg akan saya jelaskan :</p>
-        <p class="margin">
-          Margin : adalah hal yg mengatur antar elemen tag, seperti jarak tag
-          header dengan tag artikel yg mengatur adalah margin.
-        </p>
-        <p class="padding">
-          Padding : fokus pada isi background merah, padding = hal yg mengatur
-          jarak antara isi konten dan border. konten diatas itu kalimat lorem
-          itu. Saya setting jarak konten dan border 20px
-        </p>
-        <p class="border">
-          Border : adalah garis tepi yg mengatur konten. Diatas itu saya setting
-          border 1px solid black.
-        </p>
+        <!-- jadi ini penjelasan tentang box model -->
+        <div class="penjelasan">
+          <h3>Penjelasan</h3>
+          <p>Jadi ada beberapa yg akan saya jelaskan :</p>
+          <p class="margin">
+            Margin : adalah hal yg mengatur antar elemen tag, seperti jarak tag
+            header dengan tag artikel yg mengatur adalah margin.
+          </p>
+          <p class="padding">
+            Padding : fokus pada isi background merah, padding = hal yg mengatur
+            jarak antara isi konten dan border. konten diatas itu kalimat lorem
+            itu. Saya setting jarak konten dan border 20px
+          </p>
+          <p class="border">
+            Border : adalah garis tepi yg mengatur konten. Diatas itu saya
+            setting border 1px solid black.
+          </p>
+        </div>
       </div>
     </article>
   </body>
