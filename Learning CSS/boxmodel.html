@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Box Model</title>
+    <style>
+      /* setting conten di tag headder */
+      header {
+        background-color: lightgreen;
+        text-align: center;
+        justify-content: center;
+        font-size: 20px;
+        width: 550px;
+        margin-bottom: 50px; /*ini mengatur jarak tag header dan article */
+      }
+
+      header p {
+        padding-bottom: 10px;
+      }
+
+      /* setting conten di tag article */
+      .teori {
+        background-color: lightblue;
+        width: 500px;
+        height: 300px;
+        margin-bottom: 50px;
+        border: 1px solid black;
+        border-top-left-radius: 10px; /*membuat sudut melengkung */
+        border-top-right-radius: 20px;
+        border-bottom-left-radius: 30px;
+        border-bottom-right-radius: 500px;
+      }
+      .teori p {
+        background-color: red;
+        width: 400px;
+        height: 200px;
+        padding: 20px;
+        margin: 20px;
+      }
+
+      /* style bagian penjelasan */
+      .penjelasan {
+        background-color: lightyellow;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 20px;
+        justify-content: flex-end;
+        justify-content: left;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Coba Buat Box Model</h1>
+      <p>
+        Jadi kali ini saya belajar border, margin, padding. Dan nanti saya akan
+        membuat tugas kecil yaitu menjelaskan tentang box model.
+      </p>
+    </header>
+    <!-- disini saya akan menjelaskan teori dulu -->
+    <article>
+      <div class="teori">
+        <p>
+          Ini adalah konten, dan setiap konten di dalam html pasti berbentuk
+          kotak. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic
+          vel eaque iusto consequuntur rerum labore voluptas pariatur totam
+          illum ullam. Aliquid dolorum, itaque ex laboriosam ullam obcaecati
+          reprehenderit minus nam error velit magni enim optio animi neque
+          debitis officia atque! Omnis, mollitia ducimus corporis a praesentium
+          esse id deleniti possimus?
+        </p>
+      </div>
+
+      <!-- jadi ini penjelasan tentang box model -->
+      <div class="penjelasan">
+        <h3>Penjelasan</h3>
+        <p>Jadi ada beberapa yg akan saya jelaskan :</p>
+        <p class="margin">
+          Margin : adalah hal yg mengatur antar elemen tag, seperti jarak tag
+          header dengan tag artikel yg mengatur adalah margin.
+        </p>
+        <p class="padding">
+          Padding : fokus pada isi background merah, padding = hal yg mengatur
+          jarak antara isi konten dan border. konten diatas itu kalimat lorem
+          itu. Saya setting jarak konten dan border 20px
+        </p>
+        <p class="border">
+          Border : adalah garis tepi yg mengatur konten. Diatas itu saya setting
+          border 1px solid black.
+        </p>
+      </div>
+    </article>
+  </body>
+</html>
