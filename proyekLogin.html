@@ -29,7 +29,20 @@
         margin-top: 20px;
         box-sizing: border-box;
       }
+      /* style register */
+      form p{
+        margin-top: 10px;
+        font-size: 13px;
+      }
 
+      form p a{
+        text-decoration: none;
+      }
+      form p a:hover{
+        background-color: lightgreen;
+      color: black;
+      }
+      
       /* style buttnon */
 
       button {
@@ -42,6 +55,8 @@
         color: black;
         background-color: lightgreen;
       }
+      
+      
     </style>
   </head>
   <body>
@@ -52,6 +67,9 @@
       <input type="text" placeholder="Username" />
       <input type="password" placeholder="Password" />
       <button type="submit">Login</button>
+
+      <p class="register">Belum Punya Akun? <a href="#">Daftar disini</a></p>
     </form>
+
   </body>
 </html>
