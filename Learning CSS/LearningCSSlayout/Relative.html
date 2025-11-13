@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Relative Posisi</title>
+  </head>
+  <style>
+    p {
+      background-color: aqua;
+      padding: 20px;
+    }
+
+    /* relative konten */
+    .relative {
+      background-color: red;
+      position: relative;
+      top: 50px;
+    }
+    .p3 {
+      position: relative;
+      left: 300px;
+    }
+
+    .penjelasan {
+      border: 3px solid;
+      background-color: antiquewhite;
+      text-transform: capitalize;
+    }
+  </style>
+  <body>
+    <h1>Belajar Relative Posisi</h1>
+    <p>
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa, beatae
+      blanditiis impedit tempora commodi accusantium fugit ea soluta cupiditate
+      quae ad quod eius. Deleniti velit iure amet quam itaque error?
+    </p>
+
+    <p class="relative">
+      Jadi Relative layout ini adalah sebuah cara kita mempposisikan konten
+      sesuai dengan kemauan kita jadi terserah mau di taruh mana, ini tidaka
+      akan mengganggu posisi utama konten relative. Konten ini akan berpindah
+      jarak dari posisi awal
+    </p>
+
+    <p class="p3">
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus, non?
+      Dolorum voluptate quibusdam molestiae accusantium nisi? Voluptatum quo cum
+      at dolor delectus soluta fugit enim voluptate eaque ab. Facere, nobis!
+    </p>
+
+    <p class="penjelasan">
+      Jadi jarak putih itu adalah posisi awal tag bg merah, nah gwe relative in
+      nih teru aku beri jarak top 50px. Nah tag bg merah itu akan berpindah dan
+      dihitung dari posisi awal. Dan tag p3 pun sama gwe relative in dan
+      bergerak dari posisi awal
+    </p>
+  </body>
+</html>

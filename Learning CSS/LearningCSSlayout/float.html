@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Belajar Float Layout</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        background-color: #f4f4f4;
+      }
+
+      .container {
+        max-width: 900px;
+        margin: 0 auto;
+        background-color: white;
+        padding: 20px;
+      }
+
+      .header {
+        background-color: #333;
+        color: white;
+        padding: 20px;
+        margin-bottom: 30px;
+        text-align: center;
+      }
+
+      .section {
+        margin-bottom: 40px;
+        padding: 20px;
+        background-color: #f9f9f9;
+        border: 1px solid #ddd;
+      }
+
+      .section h2 {
+        margin-bottom: 15px;
+        color: #333;
+      }
+
+      /* ===== CONTOH 1: FLOAT LEFT ===== */
+      .img-float-left {
+        float: left;
+        margin-right: 15px;
+        margin-bottom: 10px;
+        border: 2px solid #333;
+      }
+
+      /* ===== CONTOH 2: SIDEBAR ===== */
+      .sidebar {
+        float: left;
+        width: 25%;
+        background-color: #e8e8e8;
+        padding: 15px;
+        margin-right: 20px;
+        border: 2px solid #999;
+      }
+
+      .sidebar h3 {
+        margin-bottom: 10px;
+      }
+
+      .sidebar ul {
+        list-style-position: inside;
+      }
+
+      .main-content {
+        background-color: #fff;
+        padding: 15px;
+        border: 2px solid #ccc;
+        /* Ini akan membungkur di sebelah sidebar */
+      }
+
+      /* ===== CONTOH 3: KOLOM GANDA ===== */
+      .column {
+        float: left;
+        width: 48%;
+        padding: 15px;
+        background-color: #e0e0e0;
+        border: 2px solid #999;
+        margin-bottom: 10px;
+      }
+
+      .column-left {
+        margin-right: 2%;
+      }
+
+      /* CLEARFIX - Sangat penting untuk menghindari layout rusak */
+      .section::after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+
+      .footer {
+        clear: both;
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding: 20px;
+        margin-top: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <h1>Belajar Float Layout</h1>
+      </header>
+
+      <!-- CONTOH 1: Gambar dengan Float Left -->
+      <section class="section">
+        <h2>Contoh 1: Gambar Float Left</h2>
+        <img
+          src="https://via.placeholder.com/150"
+          alt="Gambar"
+          class="img-float-left"
+        />
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ini adalah
+          teks yang akan membungkus di sebelah kanan gambar karena gambar
+          di-float ke kiri. Semakin panjang teks, semakin jelas efek float ini
+          terlihat.
+        </p>
+        <p>
+          Paragraf kedua juga akan membungkus di sebelah kanan gambar sampai
+          tinggi gambar selesai.
+        </p>
+      </section>
+
+      <!-- CONTOH 2: Layout Sidebar -->
+      <section class="section">
+        <h2>Contoh 2: Layout Sidebar dengan Float</h2>
+        <aside class="sidebar">
+          <h3>Sidebar</h3>
+          <ul>
+            <li>Menu 1</li>
+            <li>Menu 2</li>
+            <li>Menu 3</li>
+          </ul>
+        </aside>
+        <article class="main-content">
+          <h3>Konten Utama</h3>
+          <p>
+            Ini adalah konten utama yang akan berada di sebelah sidebar. Sidebar
+            di-float ke kiri sehingga konten utama akan membungkur di sebelah
+            kanannya.
+          </p>
+          <p>Ini adalah paragraf ke-2 konten utama.</p>
+        </article>
+      </section>
+
+      <!-- CONTOH 3: Layout Kolom Ganda -->
+      <section class="section">
+        <h2>Contoh 3: Layout Kolom Ganda</h2>
+        <div class="column column-left">
+          <h3>Kolom Kiri</h3>
+          <p>Kolom pertama dengan float left.</p>
+        </div>
+        <div class="column column-right">
+          <h3>Kolom Kanan</h3>
+          <p>Kolom kedua dengan float right.</p>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <p>&copy; 2025 Float Layout Learning</p>
+      </footer>
+    </div>
+  </body>
+</html>
