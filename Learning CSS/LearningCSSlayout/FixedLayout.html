@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fixed Widht Layout</title>
+  </head>
+  <style>
+    body {
+      width: 900px; /*agar supaya konten konsisen dalam semua device */
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .logo {
+      text-align: center;
+    }
+
+    .nav {
+      padding: 10px;
+      text-align: center;
+      background-color: antiquewhite;
+      margin-bottom: 10px;
+    }
+
+    .nav ul {
+      display: inline;
+    }
+
+    /* higlight */
+    #Highlight {
+      background-color: burlywood;
+      text-align: center;
+      padding: 20px;
+    }
+    #Highlight .kotak {
+      border: 3px solid black;
+      padding: 10px;
+      height: 100px;
+      width: 100px;
+      background-color: aqua;
+      margin: 0 auto; /*untuk menengahkan konten */
+    }
+
+    /* edit tag kolom menjadi berderet */
+    .kolom1,
+    .kolom2,
+    .kolom3 {
+      float: left;
+      width: 250px;
+      padding: 10px;
+      margin: 15px;
+      background-color: bisque;
+      margin-bottom: 20px;
+    }
+
+    .kolom2 {
+      background-color: gray;
+    }
+
+    .footer {
+      clear: both; /*untuk meng menghilangkan float */
+      background-color: greenyellow;
+      padding: 10px;
+    }
+  </style>
+  <body>
+    <!-- header -->
+    <header id="header">
+      <h1 class="logo">Logo</h1>
+      <nav class="nav">
+        <ul>
+          <a href="#">Home</a>
+        </ul>
+        <ul>
+          <a href="#">Higlight</a>
+        </ul>
+        <ul>
+          <a href="#">Services</a>
+        </ul>
+        <ul>
+          <a href="#">About</a>
+        </ul>
+        <ul>
+          <a href="#contact">Contact</a>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Higlight -->
+    <section id="Highlight">
+      <h2>Higlight</h2>
+      <p class="kotak"></p>
+      <p class="paragraf">
+        Ini adalah sebenarnya cuma pengen tahu konsep max width tujuannya agar
+        website konsisten. Lorem ipsum dolor sit amet consectetur adipisicing
+        elit. Cupiditate sint illo a voluptates corporis sunt delectus, nam odit
+        ipsa unde aliquid libero quos voluptatem natus placeat quibusdam soluta
+        nulla fugit!
+      </p>
+    </section>
+
+    <!-- section kolom -->
+
+    <div class="kolom1">
+      <h4>Web Dev</h4>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque unde
+        magnam, tempora facere amet rem rerum necessitatibus perferendis quaerat
+        quibusdam tempore eius magni quasi culpa molestiae iure laudantium
+        dignissimos. Inventore!
+      </p>
+    </div>
+    <div class="kolom2">
+      <h4>Web Dev</h4>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque unde
+        magnam, tempora facere amet rem rerum necessitatibus perferendis quaerat
+        quibusdam tempore eius magni quasi culpa molestiae iure laudantium
+        dignissimos. Inventore!
+      </p>
+    </div>
+    <div class="kolom3">
+      <h4>Web Dev</h4>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque unde
+        magnam, tempora facere amet rem rerum necessitatibus perferendis quaerat
+        quibusdam tempore eius magni quasi culpa molestiae iure laudantium
+        dignissimos. Inventore!
+      </p>
+    </div>
+
+    <!-- footer -->
+    <footer>
+      <div class="footer">Buatan Dhiimas Abdi Panuluh nih bos</div>
+    </footer>
+  </body>
+</html>
