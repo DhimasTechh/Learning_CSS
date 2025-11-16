@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flexbox Layout</title>
+    <style>
+      .fd1,
+      .fd2,
+      .fd3,
+      .fd4,
+      .fd5 {
+        border: 5px solid black;
+        width: 600px;
+        padding: 10px;
+        box-sizing: border-box;
+      }
+
+      .fd1 div,
+      .fd2 div,
+      .fd3 div,
+      .fd4 div,
+      .fd5 div {
+        width: 120px;
+        height: 120px;
+        background-color: blue;
+        margin: 1px;
+      }
+
+      /* memahami flexbox direction */
+      .fd1 {
+        display: flex;
+        flex-direction: row-reverse; /*row, row-reverse, column, column-reverse */
+      }
+      /* memahami flexbox warp */
+      .fd2 {
+        display: flex;
+        flex-wrap: wrap-reverse; /*nowrap, wrap, wrap-reverse */
+      }
+      /* memahami flexbox justify content mengatur posisi horisontal */
+      .fd3 {
+        display: flex;
+        justify-content: space-evenly; /*flex-start, flex-end, center, space-between, space-around, space-evenly */
+      }
+      /* memahami flexbox  align item mengatur rata vertikal*/
+      .fd4 {
+        border: 5px solid black;
+        width: 600px;
+        height: 400px;
+        padding: 10px;
+        box-sizing: border-box;
+      }
+
+      .fd4 {
+        display: flex;
+        justify-content: center; /*ini horizontal */
+        align-items: flex-end; /*flex-start, flex-end, center, baseline, stretch */
+      }
+      /* memahami flexbox  align conten*/
+      .fd5 {
+        border: 5px solid black;
+        width: 600px;
+        height: 400px;
+        padding: 10px;
+        box-sizing: border-box;
+      }
+      .fd5 {
+        display: flex;
+        flex-wrap: wrap;
+        align-content: space-around; /*flex-start, flex-end, center, space-between, space-around, stretch */
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Memahami Flexbox Layout dengan konsep PBL -->
+    <h3>Flexbox adalah cara mengatur tata letak konten di dalam body</h3>
+    <p>
+      disini kita belajar property flexbox ada flexbox direction, flex warp,
+      justify content, align item , align content
+    </p>
+    <br />
+    <!-- Flexbox Direction -->
+    <h4>Flexbox Direction</h4>
+    <section class="flex direction">
+      <div class="fd1">
+        <div class="1">1</div>
+        <div class="2">2</div>
+        <div class="3">3</div>
+        <div class="4">4</div>
+      </div>
+    </section>
+
+    <!-- flex warp -->
+    <h4>Flexbox Wrap</h4>
+    <section class="flex wrap">
+      <div class="fd2">
+        <div class="1">1</div>
+        <div class="2">2</div>
+        <div class="3">3</div>
+        <div class="4">4</div>
+        <div class="4">4</div>
+        <div class="4">4</div>
+      </div>
+    </section>
+
+    <!-- justify content -->
+    <h4>Flexbox justify content</h4>
+    <section class="justifyContent">
+      <div class="fd3">
+        <div class="1">1</div>
+        <div class="2">2</div>
+        <div class="3">3</div>
+        <div class="4">4</div>
+      </div>
+    </section>
+
+    <!-- align item -->
+    <h4>Flexbox Align item</h4>
+    <section class="alignItem">
+      <div class="fd4">
+        <div class="1">1</div>
+        <div class="2">2</div>
+        <div class="k3">3</div>
+        <div class="4">4</div>
+      </div>
+    </section>
+
+    <!-- align Content -->
+    <h4>Flexbox Align content</h4>
+    <section class="alignContent">
+      <div class="fd5">
+        <div class="1">1</div>
+        <div class="2">2</div>
+        <div class="3">3</div>
+        <div class="4">4</div>
+        <div class="4">4</div>
+        <div class="4">4</div>
+        <div class="4">4</div>
+      </div>
+    </section>
+  </body>
+</html>
